@@ -1,25 +1,43 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from "react";
+import "semantic-ui-css/semantic.min.css";
+import DropDown from "./component/DropDown";
+import Accordion from "./component/Accordion";
+import Search from "./component/Search";
+import Translate from "./component/Translate";
+import { items, dropDownData } from "./component/data";
+import Route from "./Route";
 
-function App() {
+export default function App() {
+  const [inpuValue, setValue] = useState("");
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
+    <div>
+      <br />
+      <Route path="/">
+        <Accordion items={items} />
+      </Route>
+
+      <Route path="/translate">
+        <Translate />
+      </Route>
+
+      <Route path="/search">
+        <Search />
+      </Route>
+
+      <Route path="/dropdown">
+        <DropDown
+          placeHolder="Select Color"
+          inpuValue={inpuValue}
+          setValue={setValue}
+          data={dropDownData}
+        />
+        <div
+          className="ui center aligned container"
+          style={{ color: inpuValue ? inpuValue : "black" }}
         >
-          Learn React
-        </a>
-      </header>
+          <h1 className="content"> Hello world</h1>
+        </div>
+      </Route>
     </div>
   );
 }
-
-export default App;
