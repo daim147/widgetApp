@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.js": "/widgetApp/static/js/main.6ffafc55.chunk.js",
+    "main.js.map": "/widgetApp/static/js/main.6ffafc55.chunk.js.map",
+    "runtime-main.js": "/widgetApp/static/js/runtime-main.0bcc4f77.js",
+    "runtime-main.js.map": "/widgetApp/static/js/runtime-main.0bcc4f77.js.map",
+    "static/css/2.18c5b109.chunk.css": "/widgetApp/static/css/2.18c5b109.chunk.css",
+    "static/js/2.8af05b5c.chunk.js": "/widgetApp/static/js/2.8af05b5c.chunk.js",
+    "static/js/2.8af05b5c.chunk.js.map": "/widgetApp/static/js/2.8af05b5c.chunk.js.map",
+    "index.html": "/widgetApp/index.html",
+    "static/css/2.18c5b109.chunk.css.map": "/widgetApp/static/css/2.18c5b109.chunk.css.map",
+    "static/js/2.8af05b5c.chunk.js.LICENSE.txt": "/widgetApp/static/js/2.8af05b5c.chunk.js.LICENSE.txt",
+    "static/media/semantic.min.css": "/widgetApp/static/media/outline-icons.ddae9b1b.woff"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.0bcc4f77.js",
+    "static/css/2.18c5b109.chunk.css",
+    "static/js/2.8af05b5c.chunk.js",
+    "static/js/main.6ffafc55.chunk.js"
+  ]
+}
