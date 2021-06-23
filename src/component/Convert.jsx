@@ -22,7 +22,7 @@ const Convert = ({ text, language }) => {
   useEffect(() => {
     //   ! if no text or language return
 
-    if (!language || !text) return;
+    if (!language || !debounceText) return;
 
     // ! post request to googl api
     axios
