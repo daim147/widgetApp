@@ -6,12 +6,14 @@ import Search from "./component/Search";
 import Translate from "./component/Translate";
 import { items, dropDownData } from "./component/data";
 import Route from "./Route";
+import Header from "./component/Header";
 
 export default function App() {
   const [inpuValue, setValue] = useState("");
   return (
     <div>
       <br />
+      <Header />
       <Route path="/">
         <Accordion items={items} />
       </Route>
